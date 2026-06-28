@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "SeizeIT2",
+  "description": "SeizeIT2 is a multicenter prospective study validating wearable EEG (Sensor Dot device) in adult and pediatric patients with refractory epilepsy. The dataset comprises 125 patients from 5 European epilepsy monitoring units, containing approximately 11,640 hours of simultaneous wearable EEG, ECG, EMG, and movement data with 886 annotated focal seizure events recorded during presurgical evaluation.",
+  "methods_description": "Participants with refractory epilepsy admitted for long-term video-EEG monitoring were recorded simultaneously with the Sensor Dot wearable device. The device recorded EEG at 250 Hz from electrodes placed on the mastoid region, ECG and EMG from chest and deltoid placements, and movement data (accelerometers and gyroscopes) at 25 Hz. EEG electrode placement followed the 10-20 system or 25-electrode array based on suspected seizure onset location.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,12 +21,47 @@
     "Wim Van Paesschen": {},
     "Maarten De Vos  ": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005873.v1.1.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "seizure detection"
+    },
+    {
+      "term": "wearable sensors"
+    },
+    {
+      "term": "ECG"
+    },
+    {
+      "term": "EMG"
+    },
+    {
+      "term": "focal seizures"
+    },
+    {
+      "term": "refractory epilepsy"
+    },
+    {
+      "term": "wearable EEG"
+    },
+    {
+      "term": "presurgical evaluation"
+    },
+    {
+      "term": "accelerometer"
+    },
+    {
+      "term": "gyroscope"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005873",
       "identifier_type": "URL",
@@ -39,83 +76,11 @@
       "identifier": "10.18112/openneuro.ds005873",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg",
-    "emg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".edf",
-    ".json",
-    ".md",
-    ".tsv"
-  ],
-  "description": "SeizeIT2 is a multicenter prospective study validating wearable EEG (Sensor Dot device) in adult and pediatric patients with refractory epilepsy. The dataset comprises 125 patients from 5 European epilepsy monitoring units, containing approximately 11,640 hours of simultaneous wearable EEG, ECG, EMG, and movement data with 886 annotated focal seizure events recorded during presurgical evaluation.",
-  "methods_description": "Participants with refractory epilepsy admitted for long-term video-EEG monitoring were recorded simultaneously with wearable Sensor Dot devices. The wearable EEG module (24.5 x 33.5 x 7.73 mm) was placed on the upper back with electrodes on the mastoid bone, sampling at 250 Hz. A second module on the chest recorded ECG and EMG at 250 Hz, with accelerometers and gyroscopes measuring movement at 25 Hz. EEG electrode placement (10-20 system or 25-electrode array) was individualized based on suspected seizure onset location.",
-  "keywords": [
-    {
-      "term": "EEG"
     },
     {
-      "term": "wearable sensors"
-    },
-    {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
-    },
-    {
-      "term": "seizure detection"
-    },
-    {
-      "term": "ECG"
-    },
-    {
-      "term": "EMG"
-    },
-    {
-      "term": "focal seizures"
-    },
-    {
-      "term": "focal aware seizures"
-    },
-    {
-      "term": "focal impaired awareness seizures"
-    },
-    {
-      "term": "temporal lobe epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013782"
-    },
-    {
-      "term": "wearable EEG"
-    },
-    {
-      "term": "Sensor Dot device"
-    },
-    {
-      "term": "refractory epilepsy"
-    },
-    {
-      "term": "presurgical evaluation"
-    },
-    {
-      "term": "multicenter study"
-    },
-    {
-      "term": "long-term monitoring"
-    },
-    {
-      "term": "clinical neurophysiology"
-    },
-    {
-      "term": "biomedical signal processing"
+      "identifier": "10.18112/openneuro.ds005873.v1.1.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -144,5 +109,21 @@
       "award_title": "AI Research Program"
     }
   ],
-  "source_hash": "4f4522f4dc00b897c4bbca293ced026999f5a4c59124bf36c117280a321a3ef5"
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg",
+    "emg"
+  ],
+  "sizes": [
+    "125.8 GB (11010 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "b91ac2a543df608cfc14143a04d5806496e0e8399661f9dc3c85a2c48592e3ca"
 }
