@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "SeizeIT2",
-  "description": "SeizeIT2 is a multicenter prospective study validating wearable EEG (Sensor Dot device) in adult and pediatric patients with refractory epilepsy. The dataset comprises 125 patients from 5 European epilepsy monitoring units, containing approximately 11,640 hours of simultaneous wearable EEG, ECG, EMG, and movement data with 886 annotated focal seizure events recorded during presurgical evaluation.",
-  "methods_description": "Participants with refractory epilepsy admitted for long-term video-EEG monitoring were recorded simultaneously with the Sensor Dot wearable device. The device recorded EEG at 250 Hz from electrodes placed on the mastoid region, ECG and EMG from chest and deltoid placements, and movement data (accelerometers and gyroscopes) at 25 Hz. EEG electrode placement followed the 10-20 system or 25-electrode array based on suspected seizure onset location.",
+  "description": "SeizeIT2 is a multicenter prospective study validating wearable EEG (Sensor Dot device) in adult and pediatric patients with refractory epilepsy. The dataset comprises 125 patients from 5 European epilepsy monitoring units, containing approximately 11,640 hours of simultaneous wearable EEG, ECG, EMG, and movement data with 886 annotated focal seizure events recorded during presurgical evaluation. This is a BIDS-reorganized version of the original OpenNeuro dataset (10.18112/openneuro.ds005873.v1.1.0), with metadata organized according to BIDS specification and annotations formatted as BIDS-score compatible files.",
+  "methods_description": "Participants with refractory epilepsy admitted for long-term video-EEG monitoring were recorded simultaneously with the Sensor Dot wearable device. The device recorded EEG at 250 Hz from two electrodes placed on the mastoid region (behind the ears), ECG at 250 Hz from two electrodes placed on the lower left rib cage and fourth intercostal space in the left parasternal position, EMG at 250 Hz from two electrodes placed on the left deltoid muscle, and movement data (accelerometers and gyroscopes) at 25 Hz. EEG electrode placement followed the 10-20 system or 25-electrode array based on suspected seizure onset location. The device measured approximately 24.5 x 33.5 x 7.73 mm, weighed 6.3 grams, and had a battery life of approximately 24 hours.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,7 +23,9 @@
   },
   "keywords": [
     {
-      "term": "EEG"
+      "term": "EEG",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
       "term": "Epilepsy",
@@ -31,34 +33,39 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
+      "term": "refractory epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018891"
+    },
+    {
       "term": "seizure detection"
-    },
-    {
-      "term": "wearable sensors"
-    },
-    {
-      "term": "ECG"
-    },
-    {
-      "term": "EMG"
-    },
-    {
-      "term": "focal seizures"
-    },
-    {
-      "term": "refractory epilepsy"
     },
     {
       "term": "wearable EEG"
     },
     {
-      "term": "presurgical evaluation"
+      "term": "wearable sensors"
     },
     {
-      "term": "accelerometer"
+      "term": "ECG",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
     },
     {
-      "term": "gyroscope"
+      "term": "EMG",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
+    },
+    {
+      "term": "focal seizures",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
+    },
+    {
+      "term": "seizure annotation"
+    },
+    {
+      "term": "accelerometry"
     }
   ],
   "related_identifiers": [
