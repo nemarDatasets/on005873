@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005873-blue)](https://doi.org/10.82901/nemar.on005873)
+
 # README
 
 This dataset is a BIDS compatible version of the SeizeIT2 dataset. It reorganizes the file structure to comply with the BIDS specification. To this effect:
