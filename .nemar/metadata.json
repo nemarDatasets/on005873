@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005873",
-  "source": "openneuro",
-  "source_id": "ds005873",
+  "pipeline_stage": "enriched",
   "title": "SeizeIT2",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Miguel Bhagubai": {},
     "Christos Chatzichristos": {},
@@ -19,24 +19,130 @@
     "Wim Van Paesschen": {},
     "Maarten De Vos  ": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005873.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005873",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005873",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005873",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg",
     "emg"
   ],
-  "datatypes": [
-    "eeg",
-    "emg"
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
   ],
-  "acknowledgements": "We would like to acknowledge all clinicians who were involved in gathering the data and all researchers, mainly Thomas\nStrypsteen, Maarten Vanmarcke and Anna Martens, who aided in the development and validation of the shared code.\nThis work was funded by the European Union under the H2020-OTHER-EIT-HEALTH program (19263); Bijzonder\nOnderzoeksfonds (BOF) KU Leuven: “Prevalence of Epilepsy and Sleep Disturbances in Alzheimer Disease” (C24/18/097);\nStrategic basic research grant by Research Foundation Flanders (FWO) (for M. Bhagubai—1SB5922N); Research Foundation\nFlanders (FWO) Research Project, “Deep, personalized epileptic seizure detection” (G0D8321N); the Flemish Government (AI\nResearch Program); M. De Vos, M. Bhagubai and C. Chatzichristos are affiliated to Leuven.AI - KU Leuven institute for AI,\nB-3000, Leuven, Belgium."
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv"
+  ],
+  "description": "SeizeIT2 is a multicenter prospective study validating wearable EEG (Sensor Dot device) in adult and pediatric patients with refractory epilepsy. The dataset comprises 125 patients from 5 European epilepsy monitoring units, containing approximately 11,640 hours of simultaneous wearable EEG, ECG, EMG, and movement data with 886 annotated focal seizure events recorded during presurgical evaluation.",
+  "methods_description": "Participants with refractory epilepsy admitted for long-term video-EEG monitoring were recorded simultaneously with wearable Sensor Dot devices. The wearable EEG module (24.5 x 33.5 x 7.73 mm) was placed on the upper back with electrodes on the mastoid bone, sampling at 250 Hz. A second module on the chest recorded ECG and EMG at 250 Hz, with accelerometers and gyroscopes measuring movement at 25 Hz. EEG electrode placement (10-20 system or 25-electrode array) was individualized based on suspected seizure onset location.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "wearable sensors"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "seizure detection"
+    },
+    {
+      "term": "ECG"
+    },
+    {
+      "term": "EMG"
+    },
+    {
+      "term": "focal seizures"
+    },
+    {
+      "term": "focal aware seizures"
+    },
+    {
+      "term": "focal impaired awareness seizures"
+    },
+    {
+      "term": "temporal lobe epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013782"
+    },
+    {
+      "term": "wearable EEG"
+    },
+    {
+      "term": "Sensor Dot device"
+    },
+    {
+      "term": "refractory epilepsy"
+    },
+    {
+      "term": "presurgical evaluation"
+    },
+    {
+      "term": "multicenter study"
+    },
+    {
+      "term": "long-term monitoring"
+    },
+    {
+      "term": "clinical neurophysiology"
+    },
+    {
+      "term": "biomedical signal processing"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "European Union",
+      "award_number": "19263",
+      "award_title": "H2020-OTHER-EIT-HEALTH program"
+    },
+    {
+      "funder_name": "KU Leuven",
+      "award_number": "C24/18/097",
+      "award_title": "Bijzonder Onderzoeksfonds (BOF): Prevalence of Epilepsy and Sleep Disturbances in Alzheimer Disease"
+    },
+    {
+      "funder_name": "Research Foundation Flanders (FWO)",
+      "award_number": "1SB5922N",
+      "award_title": "Strategic basic research grant"
+    },
+    {
+      "funder_name": "Research Foundation Flanders (FWO)",
+      "award_number": "G0D8321N",
+      "award_title": "Deep, personalized epileptic seizure detection"
+    },
+    {
+      "funder_name": "Flemish Government",
+      "award_title": "AI Research Program"
+    }
+  ],
+  "source_hash": "4f4522f4dc00b897c4bbca293ced026999f5a4c59124bf36c117280a321a3ef5"
 }
