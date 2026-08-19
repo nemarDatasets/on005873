@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "SeizeIT2",
-  "description": "SeizeIT2 is a multicenter prospective study validating wearable EEG (Sensor Dot device) in adult and pediatric patients with refractory epilepsy. The dataset comprises 125 patients from 5 European epilepsy monitoring units, containing approximately 11,640 hours of simultaneous wearable EEG, ECG, EMG, and movement data with 886 annotated focal seizure events recorded during presurgical evaluation. This is a BIDS-reorganized version of the original OpenNeuro dataset (10.18112/openneuro.ds005873.v1.1.0), with metadata organized according to BIDS specification and annotations formatted as BIDS-score compatible files.",
-  "methods_description": "Participants with refractory epilepsy admitted for long-term video-EEG monitoring were recorded simultaneously with the Sensor Dot wearable device. The device recorded EEG at 250 Hz from two electrodes placed on the mastoid region (behind the ears), ECG at 250 Hz from two electrodes placed on the lower left rib cage and fourth intercostal space in the left parasternal position, EMG at 250 Hz from two electrodes placed on the left deltoid muscle, and movement data (accelerometers and gyroscopes) at 25 Hz. EEG electrode placement followed the 10-20 system or 25-electrode array based on suspected seizure onset location. The device measured approximately 24.5 x 33.5 x 7.73 mm, weighed 6.3 grams, and had a battery life of approximately 24 hours.",
+  "description": "SeizeIT2 is a multicenter, prospective study validating the wearable Sensor Dot device for long-term epilepsy monitoring in adult and pediatric patients with refractory focal epilepsy. The dataset includes wearable EEG (behind-the-ear), ECG, EMG, and movement (accelerometer/gyroscope) recordings from 125 patients across five European epilepsy monitoring units, totaling approximately 11,640 hours of data and 886 recorded focal seizures. This BIDS-compliant version reorganizes the original SeizeIT2 data with BIDS-score compatible seizure annotations for use in epilepsy detection research.",
+  "methods_description": "Patients were monitored simultaneously with standard video-EEG (10-20 system or 25-electrode array) and the Sensor Dot (SD) wearable device, which recorded behind-the-ear EEG at 250 Hz along with ECG, EMG, and movement data (accelerometer/gyroscope at 25 Hz) via a second module on the chest. Electrode placement for the wearable EEG was tailored to each patient's suspected seizure onset hemisphere, yielding same-side and cross-head channels or additional lateral channels for generalized presentations.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,49 +23,31 @@
   },
   "keywords": [
     {
-      "term": "EEG",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
       "term": "Epilepsy",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "refractory epilepsy",
+      "term": "EEG"
+    },
+    {
+      "term": "Electrocardiography",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018891"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
+    },
+    {
+      "term": "Electromyography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
+    },
+    {
+      "term": "wearable device"
     },
     {
       "term": "seizure detection"
     },
     {
-      "term": "wearable EEG"
-    },
-    {
-      "term": "wearable sensors"
-    },
-    {
-      "term": "ECG",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
-    },
-    {
-      "term": "EMG",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
-    },
-    {
-      "term": "focal seizures",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
-    },
-    {
-      "term": "seizure annotation"
-    },
-    {
-      "term": "accelerometry"
+      "term": "focal epilepsy"
     }
   ],
   "related_identifiers": [
