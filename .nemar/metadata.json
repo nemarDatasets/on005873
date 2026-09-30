@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "SeizeIT2",
-  "description": "SeizeIT2 is a multicenter, prospective study validating the wearable Sensor Dot device for long-term epilepsy monitoring in adult and pediatric patients with refractory focal epilepsy. The dataset includes wearable EEG (behind-the-ear), ECG, EMG, and movement (accelerometer/gyroscope) recordings from 125 patients across five European epilepsy monitoring units, totaling approximately 11,640 hours of data and 886 recorded focal seizures. This BIDS-compliant version reorganizes the original SeizeIT2 data with BIDS-score compatible seizure annotations for use in epilepsy detection research.",
-  "methods_description": "Patients were monitored simultaneously with standard video-EEG (10-20 system or 25-electrode array) and the Sensor Dot (SD) wearable device, which recorded behind-the-ear EEG at 250 Hz along with ECG, EMG, and movement data (accelerometer/gyroscope at 25 Hz) via a second module on the chest. Electrode placement for the wearable EEG was tailored to each patient's suspected seizure onset hemisphere, yielding same-side and cross-head channels or additional lateral channels for generalized presentations.",
+  "description": "SeizeIT2 is a multicenter, prospective dataset of wearable behind-the-ear EEG, ECG, EMG and movement recordings from 125 adult and pediatric patients with focal epilepsy. Patients were monitored in five European epilepsy monitoring units with the Sensor Dot wearable device alongside standard video-EEG. The dataset contains about 11,640 hours of wearable data with 886 recorded focal seizures, annotated in BIDS-score compatible format, and supports the development and validation of seizure detection algorithms.",
+  "methods_description": "Patients admitted for presurgical long-term video-EEG monitoring were simultaneously recorded with the Sensor Dot wearable device. One device recorded behind-the-ear EEG from electrodes on the mastoid, with placement depending on the suspected seizure onset. A second device on the chest recorded ECG and deltoid EMG. Each device sampled at 250 Hz and contained accelerometers and gyroscopes sampled at 25 Hz. Seizure annotations were formatted as BIDS-score compatible TSV files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,31 +23,29 @@
   },
   "keywords": [
     {
+      "term": "EEG"
+    },
+    {
       "term": "Epilepsy",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "EEG"
-    },
-    {
-      "term": "Electrocardiography",
+      "term": "Seizures",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
     },
     {
-      "term": "Electromyography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004576"
-    },
-    {
-      "term": "wearable device"
+      "term": "wearable devices"
     },
     {
       "term": "seizure detection"
     },
     {
-      "term": "focal epilepsy"
+      "term": "ECG"
+    },
+    {
+      "term": "EMG"
     }
   ],
   "related_identifiers": [
@@ -105,7 +103,7 @@
     "emg"
   ],
   "sizes": [
-    "125.8 GB (11010 files)"
+    "117 GB (11010 files)"
   ],
   "formats": [
     ".edf",
